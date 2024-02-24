@@ -1,5 +1,6 @@
 package tn.esprit.spring.projetspringclasse.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,8 +18,10 @@ public class Inscription implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long numInscription;
     private Integer numSemaine;
+    @JsonIgnore
     @ManyToOne
     Cours cours;
+    @JsonIgnore
     @ManyToOne
     Skieur skieur;
 

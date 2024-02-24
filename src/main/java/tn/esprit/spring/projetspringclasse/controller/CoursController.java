@@ -18,7 +18,7 @@ public class CoursController {
         return coursService.retrieveAllCourses();
     }
 
-    @PostMapping
+    @PostMapping("/addCour")
     public Cours addCours(@RequestBody Cours cours) {
         return coursService.addCours(cours);
     }

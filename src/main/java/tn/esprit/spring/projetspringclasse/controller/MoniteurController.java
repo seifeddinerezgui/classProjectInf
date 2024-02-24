@@ -20,7 +20,7 @@ public class MoniteurController {
         return moniteurService.retrieveAllMoniteurs();
     }
 
-    @PostMapping
+    @PostMapping("/addMoniteur")
     public Moniteur addMoniteur(@RequestBody Moniteur moniteur) {
         return moniteurService.addMoniteur(moniteur);
     }

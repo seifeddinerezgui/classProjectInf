@@ -1,5 +1,6 @@
 package tn.esprit.spring.projetspringclasse.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import tn.esprit.spring.projetspringclasse.enumeration.Couleur;
@@ -22,6 +23,7 @@ public class Piste implements Serializable {
     private Couleur couleur;
     private Integer longueur;
     private Integer pente;
+    @JsonIgnore
     @ManyToMany
     private Set<Skieur> skieurs;
 
