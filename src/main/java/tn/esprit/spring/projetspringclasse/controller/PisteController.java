@@ -8,7 +8,7 @@ import tn.esprit.spring.projetspringclasse.service.PisteService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/pistes")
+@RequestMapping("/api/piste")
 @AllArgsConstructor
 public class PisteController {
 

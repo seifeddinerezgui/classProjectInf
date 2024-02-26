@@ -25,54 +25,46 @@ public class SpringDocConfig {
     public Contact contactAPI() {
         return new Contact().name("Equipe ASI II")
                 .email("seifeddine.rezgui@esprit.tn")
-                .url("https://www.linkedin.com/in/**********/");
+                .url("https://www.linkedin.com/in/seifeddinerezgui/");
     }
 
     @Bean
-    public GroupedOpenApi chambreApi() {
+    public GroupedOpenApi skieurApi() {
         return GroupedOpenApi.builder()
-                .group("Only Chambre Management API")
-                .pathsToMatch("/piste/**")
+                .group("Only skieur Management API")
+                .pathsToMatch("/api/skieur/**")
                 .pathsToExclude("**")
                 .build();
     }
     @Bean
-    public GroupedOpenApi blocApi() {
+    public GroupedOpenApi inscriptionApi() {
         return GroupedOpenApi.builder()
-                .group("Only Bloc Management API")
-                .pathsToMatch("/api/blocs/**")
+                .group("Only inscription Management API")
+                .pathsToMatch("/api/inscription/**")
                 .pathsToExclude("**")
                 .build();
     }
     @Bean
-    public GroupedOpenApi reservationApi() {
+    public GroupedOpenApi moniteurApi() {
         return GroupedOpenApi.builder()
-                .group("Only Reservation Management API")
-                .pathsToMatch("/api/reservations/**")
+                .group("Only moniteur Management API")
+                .pathsToMatch("/api/moniteur/**")
                 .pathsToExclude("**")
                 .build();
     }
     @Bean
-    public GroupedOpenApi foyerApi() {
+    public GroupedOpenApi coursApi() {
         return GroupedOpenApi.builder()
-                .group("Only Foyer Management API")
-                .pathsToMatch("/api/foyers/**")
+                .group("Only cours Management API")
+                .pathsToMatch("/api/cours/**")
                 .pathsToExclude("**")
                 .build();
     }
     @Bean
-    public GroupedOpenApi universiteApi() {
+    public GroupedOpenApi pisteApi() {
         return GroupedOpenApi.builder()
-                .group("Only Universite Management API")
-                .pathsToMatch("/api/univeristes/**")
-                .pathsToExclude("**")
-                .build();
-    }
-    @Bean
-    public GroupedOpenApi etudiantApi() {
-        return GroupedOpenApi.builder()
-                .group("Only Etudiant Management API")
-                .pathsToMatch("/api/etudiants/**")
+                .group("Only piste Management API")
+                .pathsToMatch("/api/piste/**")
                 .pathsToExclude("**")
                 .build();
     }

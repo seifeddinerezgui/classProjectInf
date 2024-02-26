@@ -8,7 +8,7 @@ import tn.esprit.spring.projetspringclasse.service.SkieurService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/skieurs")
+@RequestMapping("/api/skieur")
 @AllArgsConstructor
 public class SkieurController {
 

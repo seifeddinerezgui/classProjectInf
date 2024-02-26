@@ -6,7 +6,7 @@ import tn.esprit.spring.projetspringclasse.entity.Inscription;
 import tn.esprit.spring.projetspringclasse.service.InscriptionService;
 
 @RestController
-@RequestMapping("/inscriptions")
+@RequestMapping("/api/inscription")
 @AllArgsConstructor
 public class InscriptionController {
 

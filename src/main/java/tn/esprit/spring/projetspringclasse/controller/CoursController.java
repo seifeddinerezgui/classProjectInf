@@ -7,7 +7,7 @@ import tn.esprit.spring.projetspringclasse.service.CoursService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/cours")
+@RequestMapping("/api/cour")
 @AllArgsConstructor
 public class CoursController {
 
@@ -33,4 +33,8 @@ public class CoursController {
     public Cours retrieveCours(@PathVariable Long numCours) {
         return coursService.retrieveCours(numCours);
     }
+//    @GetMapping
+//    public Cours findInscriptionNumInscription(long inscriptionNum){
+//        return coursService.findInscriptionNumInscription(inscriptionNum);
+//    }
 }

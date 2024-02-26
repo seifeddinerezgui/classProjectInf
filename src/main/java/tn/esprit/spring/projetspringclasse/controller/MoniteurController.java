@@ -7,7 +7,7 @@ import tn.esprit.spring.projetspringclasse.service.MoniteurService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/moniteurs")
+@RequestMapping("/api/moniteur")
 @AllArgsConstructor
 public class MoniteurController {
 
